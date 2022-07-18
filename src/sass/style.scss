@@ -1,5 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import './general/base.scss';
+@import './general/variable.scss';
+@import './general/typography.scss';
+@import './components/button.scss';
+
+div {
+    color: $primary;
 }

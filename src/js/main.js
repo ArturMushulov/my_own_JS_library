@@ -1,3 +1,4 @@
-import './lib/core';
+import $ from './lib/lib';
 
-$('div');
+
+console.log($('.findme').siblings());

@@ -31,9 +31,20 @@ $.prototype.init = function(selector) {
     if (!selector) {
         return this; // возвращает просто пустой объект {}
     }
+
+    if (selector.tagName) {
+        this[0] = selector;
+        this.length = 1;
+        return this;
+    }
+
     Object.assign(this, document.querySelectorAll(selector));
     this.length = document.querySelectorAll(selector).length;
     return this; // возвращает $.prototype.init.prototype
 };
 
 $.prototype.init.prototype = $.prototype;
+
+window.$ = $; //Глобальная функция которая вызывается по символу $ 
+
+export default $;

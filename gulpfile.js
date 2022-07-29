@@ -91,6 +91,7 @@ gulp.task("prod", () => {
                             use: {
                               loader: 'babel-loader',
                               options: {
+                                
                                 presets: [['@babel/preset-env', {
                                     corejs: 3,
                                     useBuiltIns: "usage"

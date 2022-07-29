@@ -4,24 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Library</title>
+    <title>My_own_library</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
-        <div class="findme">
-            <div class="more">12</div>
-            <div class="more">13</div>
-            <div class="sss">14</div>
-            <div class="more">15</div>
-            <div class="more">16</div>
+        <button class="btn btn-primary m20" id="first">Fade out first text</button>
+        <button class="btn btn-dark m20" data-count="second">Fade out second text</button>
+        <button class="btn btn-warning m20">Fade out all texts</button>
+
+        <!-- Dropdown menu -->
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton">Dropdown button</button>
+            <div class="dropdown-menu" data-toggle-id="dropdownMenuButton">
+                <a href="#" class="dropdown-item">Action</a>
+                <a href="#" class="dropdown-item">Action #2</a>
+                <a href="#" class="dropdown-item">Action #3</a>
+            </div>
         </div>
-        <div class="active">2</div>
-        <div class="active2">1</div>
-        <div class="active3">3</div>    
-        <button class="btn">Click me</button>
-    
-    </div>
+
+        <!-- Card -->
+
+        <div class="goods d-flex f-space-around">
+            <div class="card">
+                <img class="card-img" src="https://imgv3.fotor.com/images/homepage-feature-card/Fotor-AI-photo-enhancement-tool-ru.jpg" alt="photo">
+                <div class="card-body">
+                    <div class="card-title">Card title</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque placeat qui suscipit.</p>
+                    <a href="#" id="trigger" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Link to</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mmSxaCdNHdQZ91dR0YmBV6Dw2tqnQ55XNQ&usqp=CAU" alt="photo">
+                <div class="card-body">
+                    <div class="card-title">Card title #2</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque placeat qui suscipit.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Link to</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <!-- <div class="modal" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button class="close" data-close>
+                        <span>&times;</span>
+                    </button>
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            Modal title
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus doloremque nesciunt enim rem quam corporis? Dolorem pariatur magnam distinctio perferendis. Ratione dolorem voluptates iusto facilis odit veritatis, suscipit voluptatibus!
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success">Save changes</button>
+                        <button class="btn btn-danger" data-close>Close</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="modal" id="exampleModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button class="close" data-close>
+                        <span>&times;</span>
+                    </button>
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            Modal title #2
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit 
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success">Save changes</button>
+                        <button class="btn btn-danger" data-close>Close</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Tabs -->
+
+        <div class="tab mt-20 block-center">
+            <div class="tab-panel" data-tabpanel>
+                <div class="tab-item tab-item--active">Content1</div>
+                <div class="tab-item">Content2</div>
+                <div class="tab-item">Content3</div>
+            </div>
+            <div class="tab-content tab-content--active">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti pariatur, fuga molestiae, inventore, numquam autem veniam eligendi magni dolorum sit mollitia. Dolor cupiditate voluptatem, libero voluptate nobis explicabo placeat.
+                <br> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet qui quia dolorum excepturi fugiat eligendi perferendis consectetur, reprehenderit ad asperiores accusantium laudantium doloremque ratione? Necessitatibus harum in enim impedit assumenda.
+            </div>
+            <div class="tab-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti pariatur, fuga molestiae, inventore, numquam autem veniam eligendi magni dolorum sit mollitia. Dolor cupiditate voluptatem, libero voluptate nobis explicabo placeat.
+                <br> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet qui quia dolorum excepturi fugiat eligendi perferendis consectetur, reprehenderit ad asperiores accusantium laudantium doloremque ratione? Necessitatibus harum in enim impedit assumenda.
+                <br> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet qui quia dolorum excepturi fugiat eligendi perferendis consectetur, reprehenderit ad asperiores accusantium laudantium doloremque ratione? Necessitatibus harum in enim impedit assumenda.
+            </div>
+            <div class="tab-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti pariatur, fuga molestiae, inventore, numquam autem veniam eligendi magni dolorum sit mollitia. Dolor cupiditate voluptatem, libero voluptate nobis explicabo placeat.
+            </div>
+        </div>
+
+        <!-- Accordion -->
+
+        <div class="accordion mt-20 block-center">
+            <div class="accordion-head">
+                <span>Collapse first element</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                </div>
+            </div>
+            <div class="accordion-head">
+                <span>Collapse second element</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                </div>
+            </div>
+        </div>
+
+        <!-- Слайдер -->
+
+        <div class="carousel mt-20 mb-20" id="carousel-box">
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0"></li>
+                <li data-slide-to="1"></li>
+                <li data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-slides">
+                    <div class="carousel-item">
+                        <img src="https://cdn.serif.com/affinity/img/tutorials/photo-ipad/og-photo-ipad-tutorials-110920181402.jpg" alt="carousel-photo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://burst.shopify.com/photos/two-customized-cars-rolling-through-a-city-street/download" alt="carousel-photo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/23D1/production/_124296190_1_debdatta-chakraborty_kebabiyana_hi-res_credited.jpg" alt="carousel-photo">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="carousel-prev" data-slide="prev">
+                <span class="carousel-prev-icon">&lt;</span>
+            </a>
+            <a href="#" class="carousel-next" data-slide="next">
+                <span class="carousel-next-icon">&gt;</span>
+            </a>
+        </div>
+
+    </div> 
     <script src='script.js'></script>
 </body>
 </html>

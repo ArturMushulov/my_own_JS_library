@@ -1,8 +1,7 @@
-@import './general/base.scss';
-@import './general/variable.scss';
-@import './general/typography.scss';
-@import './components/button.scss';
+@import './general/base';
+@import './general/variable';
+@import './general/typography';
+@import './components/ui.scss';
+@import './helpers/classes.scss';
 
-div {
-    color: $primary;
-}
+ 

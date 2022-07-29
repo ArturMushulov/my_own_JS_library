@@ -20,6 +20,7 @@
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
+    "babel-plugin-polyfill-corejs3": "^0.5.3",
     "browser-sync": "^2.26.7",
     "core-js": "^3.4.2",
     "gulp": "^4.0.2",

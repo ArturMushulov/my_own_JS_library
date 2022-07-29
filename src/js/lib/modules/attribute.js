@@ -1,6 +1,6 @@
 import $ from '../core';
 
-$.prototype.getAtr = function(name) {
+$.prototype.getAttr = function(name) {
     for (let i = 0; i < this.length; i++) {
         if (!this[i].getAttribute(name)) {
             continue;
@@ -10,7 +10,7 @@ $.prototype.getAtr = function(name) {
     return this;
 };
  
-$.prototype.setAtr = function(name, value) {
+$.prototype.setAttr = function(name, value) {
     for (let i = 0; i < this.length; i++) {
         if (!this[i].getAttribute(name)) {
             continue;
@@ -20,7 +20,7 @@ $.prototype.setAtr = function(name, value) {
     return this;
 };
  
-$.prototype.removeAtr = function(name) {
+$.prototype.removeAttr = function(name) {
     for (let i = 0; i < this.length; i++) {
         if (!this[i].getAttribute(name)) {
             continue;
@@ -30,7 +30,7 @@ $.prototype.removeAtr = function(name) {
     return this;
 };
  
-$.prototype.toggleAtr = function(name, value) {
+$.prototype.toggleAttr = function(name, value) {
     for (let i = 0; i < this.length; i++) {
         if (this[i].hasAttribute(name)) {
             this[i].removeAttribute(name);
